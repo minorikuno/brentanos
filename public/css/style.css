@@ -1,0 +1,50 @@
+/* 
+Crée par minori
+en mai 2021
+ */
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+
+ html {
+   scroll-behavior: smooth;
+ }
+
+ body {
+   background-color: #104E2C;
+ }
+
+ /* ================ header.php ================ */
+ header {
+   background-color: #F8F2E9 ;
+   display: flex;
+   justify-content: center; 
+   align-items: center;
+   position: fixed;
+   padding: 20px;
+   width : 100%;
+ }
+
+.logo {
+  flex-basis: 30%;
+  margin-left: 20px;
+ }
+
+ nav {
+  flex-basis: 70%;
+ }
+
+ nav ul{
+   padding: 0;
+   margin: 0;
+   display: flex;
+   justify-content: space-evenly;
+ }
+
+ nav ul li {
+   list-style: none;
+ }
+
+  /* ================ End header ================ */
