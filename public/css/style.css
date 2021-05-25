@@ -2,6 +2,11 @@
 Crée par minori
 en mai 2021
  */
+
+ /* Pour le menu / paragraphe */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+ /* Pour les titres */
+ @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
  * {
    padding: 0;
    margin: 0;
@@ -14,6 +19,43 @@ en mai 2021
 
  body {
    background-color: #104E2C;
+   font-family: 'Poppins', sans-serif;
+ }
+
+ a {
+   text-decoration: none;
+   letter-spacing: 0.15em;
+   padding: 5px 0;
+ }
+ a:hover {
+   color: #104E2C;
+ }
+
+ h1, h2, h3  {
+  font-family: 'Prata', serif;
+  letter-spacing: 0.5rem;
+  text-align: center;
+ }
+ .f-t {
+  font-family: 'Prata', serif;
+  letter-spacing: 0.1rem;
+ }
+
+ .v {
+  color: #104E2C;
+ }
+ .b {
+   color: #F8F2E9 ;
+ }
+
+ /* retour à la ligne quand c'est petit ecran */
+ .ral {
+  display: none;
+}
+ @media screen and (max-width: 768px){
+   .ral {
+     display: block;
+   }
  }
 
  /* ================ header.php ================ */
@@ -23,17 +65,19 @@ en mai 2021
    justify-content: center; 
    align-items: center;
    position: fixed;
+   z-index: 10;
    padding: 20px;
    width : 100%;
+   color: #104E2C;
+   box-shadow: 5px 5px 8px #0c3a21;
  }
 
 .logo {
-  flex-basis: 30%;
-  margin-left: 20px;
+  flex-basis: 35%;
  }
 
  nav {
-  flex-basis: 70%;
+  flex-basis: 65%;
  }
 
  nav ul{
@@ -45,6 +89,95 @@ en mai 2021
 
  nav ul li {
    list-style: none;
+   text-transform: uppercase;
  }
 
+ nav ul li a {
+   color: #104E2C;
+   position: relative;
+
+ }
+ a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: #104E2C;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+  color: #1f9655;
+}
+
+.openMenu, .closeMenu {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+  text-align: right;
+}
+
+
+@media screen and (max-width: 800px){
+  .mainMenu, .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px; 
+    right: 20px;
+  }
+  .mainMenu {
+    height: 45vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F2E9;
+    transition: top 1s ease-in;
+    display: none;
+  }
+
+  .openMenu {
+    display: block;
+    /* text-align: right; */
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  
+}
   /* ================ End header ================ */
+  /* ================ index.php ================ */
+  main {
+    padding-top: 160px;
+  }
+ 
+  /* -------------- carousel --------------- */
+  #carouselTop {
+    height: 300px;
+  }
+  .carousel-control-next, .carousel-control-prev {
+    height: 400px;
+  }
+  .objFit {
+    height: 400px;
+    object-fit: cover;
+    object-position: bottom;
+  }
+  @media screen and (max-width: 768px){
+    .objFit {
+      height: 100%;
+    }
+    
+  }
+  /* ================ End index.php ================ */

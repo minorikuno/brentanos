@@ -1,43 +1,52 @@
 <?php
 
-
+include "header.php";
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
+<main>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Librairie dans Avenue de l'Opéra vente des livres en anglais, cartes postales, cartes d'anniversaire, décorations maison, affiches et cadres | Paris 2ème">
-  <title>Librairie américaine & papeterie & décoration | Brentano's</title>
-  <link rel="icon" type="imagepng" href="public/img/logo_b_4.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <link rel="stylesheet" href="public/css/style.css">
-</head>
+  <h1 class="b">Livrairie Américaine <br class="ral">& <br class="ral"> Papeterie</h1>
+  <p class="b f-t text-center">36 Avenue de l'Opéra
+    <br>75002 PARIS
+  </p>
 
-<body>
-
-  <header>
-    <div class="logo">
-      <img src="public/img/logo_brentanos.png" alt="Logo de Brentanos">
+  <div class="container-fluide h-50">
+    <div id="carouselTop" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="public/img/slider_top_1.JPG" class="d-block w-100 objFit" alt="Photo de boutique déco">
+        </div>
+        <div class="carousel-item">
+          <img src="public/img/slider_top_2.JPG" class="d-block w-100 objFit" alt="Photo de boutique librairie">
+        </div>
+        <div class="carousel-item">
+          <img src="public/img/slider_top_5.JPG" class="d-block w-100 objFit" alt="Photo de boutique">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselTop" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselTop" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#">Histoire</a></li>
-        <li><a href="#">à propos de nous</a></li>
-        <li><a href="#">Article</a></li>
-        <li><a href="#">Boutique</a></li>
-        <li><a href="contact.php">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  </div>
+
+  
 
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-</body>
 
-</html>
+
+
+
+
+</main>
+
+
+<?php
+include "footer.php";
+
+?>
