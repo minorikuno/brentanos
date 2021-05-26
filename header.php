@@ -22,10 +22,10 @@
     <nav>
       <div class="openMenu"><i class="fas fa-bars"></i></div>
       <ul class="mainMenu">
-        <li><a href="#">Histoire</a></li>
-        <li><a href="#">à propos</a></li>
-        <li><a href="#">Article</a></li>
-        <li><a href="#">Boutique</a></li>
+        <li><a href="index.php#hist">Histoire</a></li>
+        <li><a href="index.php#aprop">à propos</a></li>
+        <li><a href="index.php#prod">Produits</a></li>
+        <li><a href="index.php#">Boutique</a></li>
         <li><a href="contact.php">Contact</a></li>
         <div class="closeMenu"><i class="fas fa-times"></i></div>
       </ul>

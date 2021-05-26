@@ -37,29 +37,63 @@ include "header.php";
   </div>
 
   <!-- ============ Histoire =========== -->
+  <div id="hist"></div>
   <section>
     <h2 class="b">Histoire</h2>
     <hr class="hr-b">
 
     <div class="histoire">
       <img src="public/img/histoire.JPG" alt="Photo ancien Brenotano's">
-      <p><span class="bigLetter">L</span>a librairie Brentano's a été fondée aux États-Unis et s'est installée à Paris en 1895. Après 2010, le magasin s'est transformé car en plus de la librairie américaine d'origine, nous avons développé 
-un département carterie, papeterie et décoration.
-</p>
+      <p><span class="bigLetter">L</span>a librairie Brentano's a été fondée aux États-Unis et s'est installée à Paris en 1895. Après 2010, le magasin s'est transformé car en plus de la librairie américaine d'origine, nous avons développé
+        un département carterie, papeterie et décoration.
+      </p>
     </div>
   </section>
 
 
   <!-- ========= à propos de nous =========== -->
-  <section class="sec-b">
-    <h2 class="v">à propos de nous</h2>
-    <hr class="hr-v">
-    <div class="apropo">
-    <p class="v text-center"> Brentano’s est la librairie américaine se situe dans l'Avenue de l'Opéra à Paris. <br>
-Nous proposons également des articles de papeterie ansi que des objets de décoration.</p>
-<img src="public/img/apropos.JPG" alt="Photo de magasin">
+  <div id="aprop"></div>
+  <section class="sec-b" style="background-image: url(public/img/apropos.JPG); background-size: cover; background-position: bottom;">
+    <div class="apropos">
+      <h2 class="v">à propos de nous</h2>
+      <hr class="hr-v">
+
+      <p class="v text-center"> Brentano’s est la librairie américaine se situe dans l'Avenue de l'Opéra à Paris. <br>
+        Nous proposons également des articles de papeterie ansi que des objets de décoration.</p>
+
     </div>
-   
+
+  </section>
+
+  <!-- ============ Nos produits ============== -->
+  <div id="prod"></div>
+  <section class="sec-v">
+    <h2 class="b">Nos produits</h2>
+    <hr class="hr-b">
+    <h3 class="v">Section librairie Américaine</h3>
+
+    <div class="produits">
+      <div class="prodList">
+
+        <ul>
+          <li>Beaux-arts</li>
+          <li>Cuisine</li>
+          <li>Bande dessinée</li>
+          <li>Jeunesse</li>
+          <li>Litterature</li>
+          <li>Parascolaire</li>
+          <li>Science Humaine</li>
+          <li>Voyage</li>
+        </ul>
+      </div>
+
+      <img src="public/img/produits_livres.JPG" alt="Photo rayon librairie">
+
+    </div>
+
+      <a class="voirPlus" href="librairie.php">Voir plus</a>
+ 
+
   </section>
 
 
