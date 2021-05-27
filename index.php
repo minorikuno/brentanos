@@ -66,6 +66,8 @@ include "header.php";
   </section>
 
   <!-- ============ Nos produits ============== -->
+
+  <!-- Librairie -->
   <div id="prod"></div>
   <section class="sec-v">
     <h2 class="b">Nos produits</h2>
@@ -91,11 +93,69 @@ include "header.php";
 
     </div>
 
-      <a class="voirPlus" href="librairie.php">Voir plus</a>
- 
+    <a class="voirPlus" href="librairie.php">Voir plus</a>
+
 
   </section>
 
+
+  <!-- Pape & deco -->
+  <section class="sec-b">
+    <h3 class="v shadowB">Section papeterie <br class="ral"> & <br class="ral"> décoration</h3>
+
+    <div class="secPape">
+
+      <a id="carte" href="papeterie.php" class="rayonPape">
+        <h4 class="v">Carterie</h4>
+        <div class="rayon" style="background-image:url(public/img/carterie.JPG)">
+          <p class="voirPape dispNone">Voir plus</p>
+        </div>
+      </a>
+
+      <a id="papete" href="papeterie.php" class="rayonPape">
+        <h4 class="v">Papeterie</h4>
+        <div class="rayon" style="background-image:url(public/img/papeterie.JPG)">
+          <p class="voirPape dispNone">Voir plus</p>
+        </div>
+      </a>
+
+      <a id="deco" href="papeterie.php" class="rayonPape">
+        <h4 class="v">Décoration</h4>
+        <div class="rayon" style="background-image:url(public/img/deco.JPG)">
+          <p class="voirPape dispNone">Voir plus</p>
+        </div>
+      </a>
+    </div>
+
+
+
+  </section>
+
+  <!-- ============== Boutique ============== -->
+  <section class="v">
+    <h2 class="b">Boutique</h2>
+    <hr class="hr-b">
+    <div class="boutique">
+
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.4803411097705!2d2.3309841155329707!3d48.86811897928845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e306bd23e2f%3A0xbb767676f8cc71b9!2s37%20Avenue%20de%20l&#39;Op%C3%A9ra%2C%2075002%20Paris!5e0!3m2!1sja!2sfr!4v1622130255620!5m2!1sja!2sfr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+      <div class="adresse b">
+
+        <h5>Adresse</h5>
+        <p>Brentano's</p>
+        <p>37, Avenue de l'Opéra
+        75002 Paris </p>
+        <p>Métro: Opéra, Pyramides, Quatre Septembre</p>
+
+        <h5>Contact</h5>
+        <p>01 42 60 87 37</p>
+        <p>paris.brentanos@gmail.com</p>
+      </div>
+    </div>
+
+  </section>
 
 
 

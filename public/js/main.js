@@ -14,3 +14,51 @@ function show(){
 function close(){
   mainMenu.style.top = '-100%';
 }
+
+// Nos produits papeterie
+const carte = document.getElementById('carte');
+const papete = document.getElementById('papete');
+const deco = document.getElementById('deco');
+const voirPape = document.querySelectorAll('.voirPape');
+
+array = {
+  0 : carte,
+  1 : papete,
+  2 : deco
+}
+// Afficher le button
+Object.keys(array).forEach(function(key) {
+  //console.log(key, this[key]);
+  this[key].addEventListener('mouseenter', function remove(){ 
+    voirPape[key].classList.remove('dispNone');
+  })
+}, array);
+
+// Enlever le button
+Object.keys(array).forEach(function(keys) {
+  //console.log(key, this[key]);
+  this[keys].addEventListener('mouseleave', function add(){ 
+    voirPape[keys].classList.add('dispNone');
+  })
+}, array);
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function add0(){
+//   voirPape[0].classList.add('dispNone');
+//   }
+// function add1(){
+//   voirPape[1].classList.add('dispNone');
+//   }
+
+

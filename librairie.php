@@ -10,8 +10,8 @@ include "header.php";
   </div>
 
   <div class="listBook">
-    <ul>
-      <li class="nonli">Beaux Arts</li>
+    <ul class="listUl">
+      <li class="nonli"><i class="fas fa-guitar"></i> Beaux Arts</li>
       <ul>
         <li>Architecture</li>
         <li>Chanel</li>
@@ -25,8 +25,8 @@ include "header.php";
       </ul>
     </ul>
 
-    <ul>
-      <li class="nonli">Littératures </li>
+    <ul class="listUl">
+      <li class="nonli"><i class="fas fa-book-open"></i> Littératures </li>
         <ul>
           <li>Anglophone</li>
           <li>Bilingue</li>
@@ -39,8 +39,8 @@ include "header.php";
      
     </ul>
 
-    <ul>
-      <li class="nonli">Science humains</li>
+    <ul class="listUl">
+      <li class="nonli"><i class="fas fa-book-reader"></i> Science humains</li>
         <ul>
           <li>Activisme</li>
           <li>Biographie</li>
@@ -59,8 +59,8 @@ include "header.php";
 
   <div class="listBook">
 
-  <ul>
-    <li class="nonli">Jeunesse albums </li>
+  <ul class="listUl">
+    <li class="nonli"><i class="fas fa-child"></i> Jeunesse albums </li>
       <ul>
       <li>Album âge</li>
       <li>Conte</li>
@@ -74,8 +74,8 @@ include "header.php";
      
     </ul>
 
-    <ul>
-      <li class="nonli">Jeunesse romans </li>
+    <ul class="listUl">
+      <li class="nonli"><i class="fas fa-dragon"></i> Jeunesse romans </li>
         <ul>
           <li>Aventure</li>
           <li>Harry Potter</li>
@@ -85,8 +85,8 @@ include "header.php";
       
     </ul>
 
-    <ul>
-      <li class="nonli">Parascolaire</li>
+    <ul class="listUl">
+      <li class="nonli"><i class="fas fa-book"></i> Parascolaire</li>
         <ul>
           <li>Conversation</li>
           <li>Dictionnaire</li>
@@ -105,9 +105,9 @@ include "header.php";
 
 
 
-  <img src="" alt="" width=" 100%">
 
 
+<a class="back" href="index.php">Retour à la page d'accueil</a>
 </main>
 
 

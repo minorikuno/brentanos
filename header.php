@@ -17,7 +17,7 @@
 
   <header>
     <div class="logo">
-      <img src="public/img/logo_brentanos.png" alt="Logo de Brentanos">
+      <a href="index.php"><img src="public/img/logo_brentanos.png" alt="Logo de Brentanos"></a>
     </div>
     <nav>
       <div class="openMenu"><i class="fas fa-bars"></i></div>
