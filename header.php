@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
@@ -9,7 +9,7 @@
   <title>Librairie américaine & papeterie & décoration | Brentano's</title>
   <link rel="icon" type="imagepng" href="public/img/logo_b.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"> 
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="public/css/style.css">
 </head>
 
@@ -22,15 +22,26 @@
     <nav>
       <div class="openMenu"><i class="fas fa-bars"></i></div>
       <ul class="mainMenu">
-        <li><a href="index.php#hist">Histoire</a></li>
-        <li><a href="index.php#aprop">à propos</a></li>
-        <li><a href="index.php#prod">Produits</a></li>
-        <li><a href="index.php#">Boutique</a></li>
+        <li><a href="index.php#histoire">Histoire</a></li>
+        <li><a href="index.php#aproposdenous">à propos</a></li>
+        <li><a href="index.php#nosproduits">Produits</a></li>
+       <li class="responNav"><a href="index.php#boutique">Boutique</a></li> 
+        <div class="dropdown">
+          <button class="dropbtn">Boutique
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <ul>
+              <li><a href="index.php#nosproduits">Librairie</a></li>
+              <li><a href="index.php#papeterie">Papeterie</a></li>
+            </ul>
+         </div>
+        </div>
         <li><a href="contact.php">Contact</a></li>
         <div class="closeMenu"><i class="fas fa-times"></i></div>
       </ul>
-    
-      
-      
+
+
+
     </nav>
   </header>
