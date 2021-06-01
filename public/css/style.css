@@ -288,7 +288,13 @@ nav ul li a:hover:after {
 /* ================ index.php ================ */
 
 main {
-  padding-top: 145px;
+  padding: 145px 0;
+}
+
+@media screen and (max-width: 425px) {
+  main {
+    padding: 100px 0;
+  }
 }
 
 /* -------------- carousel --------------- */
@@ -567,7 +573,7 @@ h3 {
 
 .snsTable {
   background-color: #f8f2e9cb;
-  padding: 10px;
+  padding: 20px;
   width: 50%;
 }
 
@@ -640,12 +646,14 @@ background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+
 
 /* ================= footer.php ================== */
 footer {
-  padding: 25px;
+  padding: 15px;
   margin: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   box-shadow: 5px 5px 8px #0c3a21;
+  position: fixed;
+  bottom: 0;
 }
 
 footer a {
@@ -719,7 +727,10 @@ footer a {
 
 .back:hover {
   border-radius: 10px;
-  box-shadow: 5px 5px 8px #c4bfb7;
+  background-color:#104E2C;
+  color: #F8F2E9;
+  opacity: 0.8;
+  box-shadow: 5px 5px 5px #c4bfb7;
 }
 
 .back:active {
@@ -762,4 +773,169 @@ footer a {
 .mlg p {
   text-align: left;
 }
+
+@media screen and (max-width: 425px){
+  .mlg {
+    width: 95%;
+  }
+  
+
+}
 /* ============= End mentionlegal.php ============= */
+
+/* ===========  contact.php ============= */
+.mainForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} 
+
+.formulaire, .postdData {
+  width: 60%;
+  background-color: #F8F2E9;
+  margin-bottom: 30px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #104E2C;
+}
+
+/* success-contact.php */
+.postdData {
+  padding: 5px;
+  background-color: #f8f2e9d8;
+  border-radius: 5px;
+  box-shadow: 5px 5px 8px #0c3a21;
+}
+
+.postdData p {
+  text-align: left;
+  margin: 5px;
+}
+
+.postdData h5 {
+  margin: 5px;
+}
+
+.mainForm a:hover {
+  transition: all 2s ease-in ;
+  border-bottom: 1px solid #F8F2E9;
+}
+@media screen and (max-width:425px){
+  .postdData h5 {
+    font-size: 15px;
+    margin: 5px;
+    letter-spacing: normal;
+  }
+  .postdData {
+    width: 95%;
+  }
+}
+/* success-contact.php */
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form h1 {
+  margin : 10px;
+}
+
+form input {
+  margin: 5px 0;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.message textarea {
+  margin: 5px 0;
+  height: 200px;
+  width: 100%;
+  resize: none;
+}
+
+.message button {
+  border: none;
+  letter-spacing: 0.15rem;
+}
+
+.message button:hover {
+  background-color: #104E2C;
+  color:#F8F2E9;
+  
+}
+
+@media screen and (max-width: 425px) {
+  .formulaire {
+    width: 95%;
+  }
+}
+
+/* =========== End contact.php=========== */
+
+/* =========== papeterie.php=========== */
+.papeBack {
+  background-image: url(../img/pape1.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.papeColor {
+  background-color: #f8f2e9a8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.papeColor h1 {
+  padding: 30px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.papeDesc {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px #c4bfb7;
+  border: 1px solid #104E2C;
+  color: #104E2C;
+
+}
+
+.papeDesc img {
+  flex-basis: 30%;
+  width: 60%;
+
+}
+
+.papeDesc ul {
+  flex-basis: 60%;
+  padding-left: 0;
+}
+
+.papeDesc ul li {
+  list-style: none;
+  text-align: justify;
+  margin: 2px;
+}
+
+.papeDesc h5 {
+  margin: 0;
+  letter-spacing: normal;
+}
+
+/* =========== End papeterie.php=========== */

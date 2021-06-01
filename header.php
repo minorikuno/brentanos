@@ -24,10 +24,10 @@
       <ul class="mainMenu">
         <li><a href="index.php#histoire">Histoire</a></li>
         <li><a href="index.php#aproposdenous">à propos</a></li>
-        <li><a href="index.php#nosproduits">Produits</a></li>
-       <li class="responNav"><a href="index.php#boutique">Boutique</a></li> 
+        
+       <li class="responNav"><a href="index.php#nosproduits">Produits</a></li> 
         <div class="dropdown">
-          <button class="dropbtn">Boutique
+          <button class="dropbtn">Produits
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
@@ -37,6 +37,7 @@
             </ul>
          </div>
         </div>
+        <li><a href="index.php#boutique">Boutique</a></li>
         <li><a href="contact.php">Contact</a></li>
         <div class="closeMenu"><i class="fas fa-times"></i></div>
       </ul>
