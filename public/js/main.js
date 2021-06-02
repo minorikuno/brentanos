@@ -6,12 +6,12 @@ const closeMenu = document.querySelector('.closeMenu');
 openMenu.addEventListener('click', show);
 closeMenu.addEventListener('click', close);
 
-function show(){
+function show() {
   mainMenu.style.display = 'flex';
   mainMenu.style.top = '0';
 }
 
-function close(){
+function close() {
   mainMenu.style.top = '-100%';
 }
 
@@ -22,30 +22,35 @@ const deco = document.getElementById('deco');
 const voirPape = document.querySelectorAll('.voirPape');
 
 array = {
-  0 : carte,
-  1 : papete,
-  2 : deco
+  0: carte,
+  1: papete,
+  2: deco
 }
-// Afficher le button
-Object.keys(array).forEach(function(key) {
-  //console.log(key, this[key]);
-  this[key].addEventListener('mouseenter', function remove(){ 
-    voirPape[key].classList.remove('dispNone');
-  })
-}, array);
+// Afficher le button + 
+// JAVASCRIPT FOR INDEX PAGE 
+const host = "http://localhost/b-sitevitrine/index.php";
+if (window.location.href === host + '#histoire' ||
+window.location.href === host + '#aproposdenous' ||
+window.location.href === host + '#nosproduits' ||
+window.location.href === host + '#papeterie' ||
+window.location.href === host ||
+window.location.href === host + '#boutique' 
+&& window.innerWidth > 768) {
+  Object.keys(array).forEach(function (key) {
+    //console.log(key, this[key]);
+    this[key].addEventListener('mouseenter', function remove() {
+      voirPape[key].classList.remove('dispNone');
+    })
+  }, array);
 
-// Enlever le button
-Object.keys(array).forEach(function(keys) {
-  //console.log(key, this[key]);
-  this[keys].addEventListener('mouseleave', function add(){ 
-    voirPape[keys].classList.add('dispNone');
-  })
-}, array);
-
-
-
-
-
+  // Enlever le button
+  Object.keys(array).forEach(function (keys) {
+    //console.log(key, this[key]);
+    this[keys].addEventListener('mouseleave', function add() {
+      voirPape[keys].classList.add('dispNone');
+    })
+  }, array);
+}
 
 
 

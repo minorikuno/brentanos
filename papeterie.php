@@ -7,7 +7,7 @@
 
       <div class="papeDesc">
         <img src="public/img/pape2.jpg" alt="Photo de rayon papeterie">
-        <div class="">
+        <div class="papeList">
           <h5>Paris / France</h5>
           <ul>
             <li>Carnet</li>
@@ -22,7 +22,7 @@
       </div>
       <div class="papeDesc">
       <img src="public/img/pape3.jpg" alt="Photo de rayon papeterie">
-      <div class="">
+      <div class="papeList">
           <h5>Fleurs / Animaux </h5>
           <ul>
             <li>Carnet</li>
@@ -39,7 +39,7 @@
       </div>
       <div class="papeDesc">
         <img src="public/img/pape4.jpg" alt="Photo de rayon papeterie">
-     <div class="">
+     <div class="papeList">
           <h5>Monde / Voyage</h5>
           <ul>
             <li>Carnet de voyage</li>
@@ -58,7 +58,7 @@
 
   </div>
 
-
+  <a class="back" href="index.php#papeterie">Retour à l'accueil</a>
 
 
 </main>

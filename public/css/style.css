@@ -113,6 +113,7 @@ section {
 .b {
   color: #F8F2E9;
 }
+
 .b:hover {
   color: #F8F2E9;
 }
@@ -217,7 +218,7 @@ nav ul li a:hover:after {
   display: none;
   position: absolute;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -273,11 +274,9 @@ nav ul li a:hover:after {
   nav ul li a {
     padding: 5px;
   }
-
   .dropdown {
     display: none;
   }
- 
   .responNav {
     display: block;
   }
@@ -425,14 +424,10 @@ h3 {
   transition: all 0.5s ease-in-out;
 }
 
-
-
 .voirPlus:hover {
   border-radius: 10px;
   box-shadow: 2px 2px 10px #c4bfb7;
 }
-
-
 
 .voirPlus:active {
   position: relative;
@@ -453,13 +448,15 @@ h3 {
     width: 100%;
   }
 }
+
 /* ---------- nos produit papeterie deco ----------- */
+
 .secPape {
   display: flex;
   justify-content: space-evenly;
   margin: 30px 0;
-
 }
+
 .rayonPape {
   display: block;
   flex-basis: 30%;
@@ -468,6 +465,7 @@ h3 {
   padding: 5px;
   transition: all 0.2s ease-in-out;
 }
+
 .rayonPape h4 {
   margin: 5px;
 }
@@ -499,7 +497,7 @@ h3 {
   display: none;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
   .secPape {
     flex-wrap: wrap;
     justify-content: center;
@@ -514,6 +512,7 @@ h3 {
 }
 
 /* ============== Boutique ================ */
+
 .boutiques {
   display: flex;
   justify-content: space-around;
@@ -528,7 +527,6 @@ h3 {
   flex-basis: 40%;
   display: flex;
   flex-direction: column;
-  
 }
 
 .boutiqueInfo h5 {
@@ -536,20 +534,20 @@ h3 {
   color: #104E2C;
   margin: 0;
   padding: 5px;
-
 }
+
 .adresse {
   margin-bottom: 15px;
 }
+
 .adresse, .contact {
   border: 1px solid #F8F2E9;
   display: flex;
   flex-direction: column;
   justify-content: center;
- 
 }
 
-.adresse p , .contact p {
+.adresse p, .contact p {
   margin: 5px 0 5px 10px;
 }
 
@@ -568,7 +566,6 @@ h3 {
   flex-direction: column;
   align-items: center;
   width: inherit;
-
 }
 
 .snsTable {
@@ -586,15 +583,17 @@ h3 {
   display: flex;
   justify-content: space-evenly;
 }
+
 .snsTable a {
   display: block;
   padding: 10px 20px;
   box-shadow: 5px 5px 8px #c4bfb7;
-  color:#F8F2E9;
+  color: #F8F2E9;
   transition: all 0.5s ease;
   flex-basis: 45%;
   text-align: center;
 }
+
 .snsTable a:hover {
   border-radius: 20px;
   box-shadow: 5px 5px 5px #9e9a94;
@@ -608,17 +607,18 @@ h3 {
 }
 
 .insta {
-  background: #833ab4;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: #833ab4;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 @media screen and (max-width: 900px) {
   .boutiques {
     flex-wrap: wrap;
   }
-  
   .map, .boutiqueInfo {
     flex-basis: 100%;
     margin: 10px 0;
@@ -633,18 +633,17 @@ background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+
 
 @media screen and (max-width: 425px) {
   .mail {
-    font-size:3vw;
+    font-size: 3vw;
   }
   .snsLien a {
-    font-size:3vw;
+    font-size: 3vw;
   }
-  
 }
-
 
 /* ================ End index.php ================ */
 
 /* ================= footer.php ================== */
+
 footer {
   padding: 15px;
   margin: 20px;
@@ -713,11 +712,12 @@ footer a {
 }
 
 .back {
+  font-size: 15px;
   background-color: #F8F2E9;
   padding: 10px;
   display: block;
   width: 250px;
-  margin: 20px auto;
+  margin: 40px auto;
   text-align: center;
   text-transform: uppercase;
   color: #104E2C;
@@ -727,10 +727,11 @@ footer a {
 
 .back:hover {
   border-radius: 10px;
-  background-color:#104E2C;
+  background-color: #104E2C;
   color: #F8F2E9;
   opacity: 0.8;
-  box-shadow: 5px 5px 5px #c4bfb7;
+  /* box-shadow: 5px 5px 5px #c4bfb7; */
+  border: 1px solid #F8F2E9;
 }
 
 .back:active {
@@ -740,14 +741,11 @@ footer a {
   box-shadow: none;
 }
 
-
-
-
 @media screen and (max-width: 734px) {
   .listBook {
     flex-wrap: wrap;
     margin-top: 0;
-    padding: 0 10% ;
+    padding: 0 10%;
     padding-bottom: 0;
   }
   .listUl {
@@ -759,6 +757,7 @@ footer a {
 /* ================ End librairie ================ */
 
 /* ============== mentionlegal.php ============== */
+
 .mlg {
   color: #F8F2E9;
   display: flex;
@@ -774,22 +773,22 @@ footer a {
   text-align: left;
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 425px) {
   .mlg {
     width: 95%;
   }
-  
-
 }
+
 /* ============= End mentionlegal.php ============= */
 
 /* ===========  contact.php ============= */
+
 .mainForm {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-} 
+}
 
 .formulaire, .postdData {
   width: 60%;
@@ -804,6 +803,7 @@ footer a {
 }
 
 /* success-contact.php */
+
 .postdData {
   padding: 5px;
   background-color: #f8f2e9d8;
@@ -821,10 +821,11 @@ footer a {
 }
 
 .mainForm a:hover {
-  transition: all 2s ease-in ;
+  transition: all 2s ease-in;
   border-bottom: 1px solid #F8F2E9;
 }
-@media screen and (max-width:425px){
+
+@media screen and (max-width:425px) {
   .postdData h5 {
     font-size: 15px;
     margin: 5px;
@@ -834,7 +835,9 @@ footer a {
     width: 95%;
   }
 }
+
 /* success-contact.php */
+
 form {
   display: flex;
   flex-direction: column;
@@ -843,7 +846,7 @@ form {
 }
 
 form h1 {
-  margin : 10px;
+  margin: 10px;
 }
 
 form input {
@@ -870,8 +873,7 @@ form input {
 
 .message button:hover {
   background-color: #104E2C;
-  color:#F8F2E9;
-  
+  color: #F8F2E9;
 }
 
 @media screen and (max-width: 425px) {
@@ -883,12 +885,14 @@ form input {
 /* =========== End contact.php=========== */
 
 /* =========== papeterie.php=========== */
+
 .papeBack {
   background-image: url(../img/pape1.JPG);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .papeColor {
   background-color: #f8f2e9a8;
   display: flex;
@@ -896,6 +900,7 @@ form input {
   justify-content: center;
   align-items: center;
 }
+
 .papeColor h1 {
   padding: 30px;
   width: 100%;
@@ -904,7 +909,7 @@ form input {
 
 .papeDesc {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   width: 70%;
   margin: 30px;
@@ -913,13 +918,11 @@ form input {
   box-shadow: 5px 5px 8px #c4bfb7;
   border: 1px solid #104E2C;
   color: #104E2C;
-
 }
 
 .papeDesc img {
   flex-basis: 30%;
   width: 60%;
-
 }
 
 .papeDesc ul {
@@ -938,4 +941,111 @@ form input {
   letter-spacing: normal;
 }
 
+.papeList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* =========== End papeterie.php=========== */
+
+/* ===========  carterie.php=========== */
+
+.carteBack {
+  background-image: url(../img/carte.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.papeColor {
+  background-color: #f8f2e9a8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.carteDesc {
+  color: #104E2C;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #104E2C;
+  margin: 20px;
+  padding: 5px;
+  width: 60%;
+}
+
+.carteDesc h4 {
+  margin: 5px;
+  padding: 5px;
+  background-color: #104E2C;
+  color: #F8F2E9;
+  width: 100%;
+}
+
+.carteDesc p {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  background-color: #F8F2E9;
+}
+
+
+/* =========== End carterie.php=========== */
+
+/* ===========  decoration.php=========== */
+
+#decoBack {
+  background-image: url(../img/deco1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#decoColor {
+  background-color: #f8f2e9a8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+/* media query pour papeterie carterie decp .php */
+
+@media screen and (max-width:768px) {
+  .papeDesc {
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .carteDesc {
+    width: 95%;
+  }
+  .papeColor {
+    padding: 5px;
+  }
+  @media screen and (max-width:425px) {
+    .papeDesc {
+      flex-wrap: wrap;
+      width: 95%;
+      margin: 5px 2px;
+      padding: 2px;
+    }
+    .papeDesc img {
+      width: 100%;
+    }
+    .papeColor {
+      padding: 5px;
+    }
+    .papeDesc h5 {
+      margin-top: 10px;
+    }
+    .decoColor {
+      padding: 5px;
+    }
+  }
+  /* ===========  End decoration.php=========== */

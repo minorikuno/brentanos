@@ -107,7 +107,7 @@ include "header.php";
 
 
 
-<a class="back" href="index.php">Retour à la page d'accueil</a>
+<a class="back" href="index.php#nosproduits">Retour à l'accueil</a>
 </main>
 
 
