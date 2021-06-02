@@ -1,22 +1,44 @@
 <?php
 include "header.php";
+require 'src/functions.php';
 
-if(isset($_POST["submit"])){
-  $nomprenom = $_POST['nomprenom'];
-  $email = $_POST['email'];
-  $sujet = $_POST['sujet'];
-  $message = $_POST['message'];
+# Data de formulaire
+$nomprenom = isset($_POST['nomprenom']) ? $_POST['nomprenom']:NULL ;
+$email =  isset($_POST['email']) ? $_POST['email']:NULL ;
+$sujet =  isset($_POST['sujet']) ? $_POST['sujet']:NULL ;
+$message =  isset($_POST['message']) ? $_POST['message']:NULL ;
 
+if(isset($_POST["submit"])){ 
+  
+  # Vérifie si les données contiennent pas les mauvaises valeurs
+  $_POST = checkInput($_POST);
+
+  # Filtering les valeurs
+  if(isset($_POST['nomprenom'])) {
+    $nomprenom = filter_var($_POST['nomprenom'], FILTER_SANITIZE_STRING);
+  }
+
+  if(isset($_POST['email'])) {
+    # pas de retour a la ligne
+    $email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['email']);
+    $email = filter_var($email, FILTER_VALIDATE_EMAIL);
+  }
+
+  if(isset($_POST['sujet'])) {
+    $sujet = filter_var($_POST['sujet'], FILTER_SANITIZE_STRING);
+  }
+
+  if(isset($_POST['message'])) {
+    $message = filter_var(($_POST['message']), FILTER_SANITIZE_STRING);
+  }
+
+  # Envoyer le mail
+  # h($var) : escaping
   $mailTo = "contact@brentanos-paris.com";
-  $headers = "FROM: ". $sujet;
-  $txt = "Mail de formulaire de site: ".$nomprenom." de " .$sujet."\n\n"."$message";
+  $headers = "FROM: ". h($sujet);
+  $txt = "Mail de formulaire de site: ".h($nomprenom)." de " .h($sujet)."\n\n"."h($message)";
 
-
-
-  mail($mailTo, $sujet, $txt, $headers);
-  //header("Location: index.php?mailsend");
-
-
+  mail($mailTo, $sujet, $txt, $headers);  
 }
 
 ?>
@@ -28,13 +50,13 @@ if(isset($_POST["submit"])){
 
       <div class="message">
 
-        <input class="form-control" type="text" name="nomprenom" placeholder="Prénom et Nom">
-        <input class="form-control" type="email" name="email" placeholder="Votre email">
+        <input class="form-control" type="text" name="nomprenom" placeholder="Prénom et Nom" required>
+        <input class="form-control" type="email" name="email" placeholder="Votre email" required>
 
 
-        <input class="form-control" type="text" name="sujet" placeholder="Sujet">
+        <input class="form-control" type="text" name="sujet" placeholder="Sujet" required>
 
-        <textarea class="form-control" name="message" id="" placeholder="Votre message"></textarea>
+        <textarea class="form-control" name="message" id="" placeholder="Votre message" required></textarea>
 
         <button type="submit" name="submit" class="voirPlus">Envoyer</button>
 
