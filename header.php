@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Librairie dans Avenue de l'Opéra vente des livres en anglais, cartes postales, cartes d'anniversaire, décorations maison, affiches et cadres | Paris 2ème">
   <title>Librairie américaine & papeterie & décoration | Brentano's</title>
-  <link rel="icon" type="imagepng" href="public/img/logo_b.png">
+  <link rel="icon" type="image/png" href="public/img/logo_b.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="public/css/style.css">

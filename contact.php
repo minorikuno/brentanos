@@ -34,12 +34,31 @@ if(isset($_POST["submit"])){
 
   # Envoyer le mail
   # h($var) : escaping
+  if($_SERVER['REQUEST_METHOD']==='POST') {
+  
   $mailTo = "contact@brentanos-paris.com";
   $headers = "FROM: ". h($sujet);
   $txt = "Mail de formulaire de site: ".h($nomprenom)." de " .h($sujet)."\n\n"."h($message)";
 
-  mail($mailTo, $sujet, $txt, $headers);  
+ mail($mailTo, $sujet, $txt, $headers);
+
+ $result = mail($mailTo, $sujet, $txt, $headers);
+if($result){
+  $_POST = array();
+  $nomprenom = '';
+  $email = '';
+  $sujet = '';
+  $message = '';
+
+  $url = 'success-contact.php';
+  header('Location:'.$url);
+  exit;
+
+  }
+ }
 }
+
+
 
 ?>
 <main class="mainForm">
@@ -49,14 +68,18 @@ if(isset($_POST["submit"])){
       <h1 class="v">Contactez-nous</h1>
 
       <div class="message">
+<?php 
 
+if(isset($result) && !$result): ?>
+  <h4>échec d'envoie de mail</h4>
+  <?php endif; ?>
         <input class="form-control" type="text" name="nomprenom" placeholder="Prénom et Nom" required>
         <input class="form-control" type="email" name="email" placeholder="Votre email" required>
 
 
         <input class="form-control" type="text" name="sujet" placeholder="Sujet" required>
 
-        <textarea class="form-control" name="message" id="" placeholder="Votre message" required></textarea>
+        <textarea class="form-control" name="message" placeholder="Votre message" required></textarea>
 
         <button type="submit" name="submit" class="voirPlus">Envoyer</button>
 

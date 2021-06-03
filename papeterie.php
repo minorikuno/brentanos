@@ -15,7 +15,7 @@
             <li>Magnet</li>
             <li>Pochette / Trousse</li>
             <li>Porte clé</li>
-            <li>Régle</li>
+            <li>Règle</li>
           </ul>
           </div>
 
@@ -27,8 +27,8 @@
           <ul>
             <li>Carnet</li>
             <li>Cahier</li>
-            <li>Cahier elastique</li>
-            <li>Calendrier perpetuel</li>
+            <li>Cahier élastique</li>
+            <li>Calendrier perpétuel</li>
             <li>Bloc memo</li>
             <li>Miroir</li>
             <li>Marque page</li>

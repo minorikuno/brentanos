@@ -10,8 +10,8 @@ include "header.php";
   </div>
 
   <div class="listBook">
-    <ul class="listUl">
-      <li class="nonli"><i class="fas fa-guitar"></i> Beaux Arts</li>
+    <div class="listUl">
+      <h5 class="nonli"><i class="fas fa-guitar"></i> Beaux Arts</h5>
       <ul>
         <li>Architecture</li>
         <li>Chanel</li>
@@ -23,10 +23,10 @@ include "header.php";
         <li>Photographie</li>
         <li>Cinéma</li>
       </ul>
-    </ul>
+    </div>
 
-    <ul class="listUl">
-      <li class="nonli"><i class="fas fa-book-open"></i> Littératures </li>
+    <div class="listUl">
+      <h5 class="nonli"><i class="fas fa-book-open"></i> Littératures </h5>
         <ul>
           <li>Anglophone</li>
           <li>Bilingue</li>
@@ -37,10 +37,10 @@ include "header.php";
           <li>Théâtre</li>
         </ul>
      
-    </ul>
+    </div>
 
-    <ul class="listUl">
-      <li class="nonli"><i class="fas fa-book-reader"></i> Science humains</li>
+    <div class="listUl">
+      <h5 class="nonli"><i class="fas fa-book-reader"></i> Science humains</h5>
         <ul>
           <li>Activisme</li>
           <li>Biographie</li>
@@ -51,7 +51,7 @@ include "header.php";
           <li>Politique</li>
           <li>Science</li>
         </ul>
-    </ul>
+    </div>
 
 
    
@@ -59,8 +59,8 @@ include "header.php";
 
   <div class="listBook">
 
-  <ul class="listUl">
-    <li class="nonli"><i class="fas fa-child"></i> Jeunesse albums </li>
+  <div class="listUl">
+    <h5 class="nonli"><i class="fas fa-child"></i> Jeunesse albums </h5>
       <ul>
       <li>Album âge</li>
       <li>Conte</li>
@@ -72,10 +72,10 @@ include "header.php";
       <li>Activité / Créatif</li>
       </ul>
      
-    </ul>
+    </div>
 
-    <ul class="listUl">
-      <li class="nonli"><i class="fas fa-dragon"></i> Jeunesse romans </li>
+    <div class="listUl">
+      <h5 class="nonli"><i class="fas fa-dragon"></i> Jeunesse romans </h5>
         <ul>
           <li>Aventure</li>
           <li>Harry Potter</li>
@@ -83,10 +83,10 @@ include "header.php";
           <li>Apprentissage</li>
         </ul>
       
-    </ul>
+    </div>
 
-    <ul class="listUl">
-      <li class="nonli"><i class="fas fa-book"></i> Parascolaire</li>
+    <div class="listUl">
+      <h5 class="nonli"><i class="fas fa-book"></i> Parascolaire</h5>
         <ul>
           <li>Conversation</li>
           <li>Dictionnaire</li>
@@ -94,8 +94,8 @@ include "header.php";
           <li>Méthode 
             <br>d'apprentissage</li>
         </ul>
-      
-    </ul>
+        
+    </div>
 
     
 

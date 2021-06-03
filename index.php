@@ -6,7 +6,7 @@ include "header.php";
 
 <main>
   <!-- ======== Heading de page ========== -->
-  <h1 class="b">Livrairie Américaine <br class="ral">& <br class="ral"> Papeterie</h1>
+  <h1 class="b">Librairie Américaine <br class="ral">& <br class="ral"> Papeterie</h1>
   <p class="b f-t text-center">36 Avenue de l'Opéra
     <br>75002 PARIS
   </p>
@@ -43,7 +43,7 @@ include "header.php";
     <hr class="hr-b">
 
     <div class="histoires">
-      <img src="public/img/histoire.JPG" alt="Photo ancien Brenotano's">
+      <img src="public/img/histoire.JPG" alt="Photo ancien Brentano's">
       <p><span class="bigLetter">L</span>a librairie Brentano's a été fondée aux États-Unis et s'est installée à Paris en 1895. Après 2010, le magasin s'est transformé car en plus de la librairie américaine d'origine, nous avons développé
         un département carterie, papeterie et décoration.
       </p>
@@ -58,8 +58,8 @@ include "header.php";
       <h2 class="v">à propos de nous</h2>
       <hr class="hr-v">
 
-      <p class="v text-center"> Brentano’s est la librairie américaine se situe dans l'Avenue de l'Opéra à Paris. <br>
-        Nous proposons également des articles de papeterie ansi que des objets de décoration.</p>
+      <p class="v text-center"> Brentano’s est la librairie américaine qui se situe dans l'Avenue de l'Opéra à Paris. <br>
+        Nous proposons également des articles de papeterie ainsi que des objets de décoration.</p>
 
     </div>
 
@@ -82,7 +82,7 @@ include "header.php";
           <li>Cuisine</li>
           <li>Bande dessinée</li>
           <li>Jeunesse</li>
-          <li>Litterature</li>
+          <li>Littérature</li>
           <li>Parascolaire</li>
           <li>Science Humaine</li>
           <li>Voyage</li>
@@ -141,7 +141,7 @@ include "header.php";
     <div class="boutiques">
 
       <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.480341115105!2d2.3309787511008544!3d48.86811897918673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e306bd23e2f%3A0xbb767676f8cc71b9!2s37%20Avenue%20de%20l&#39;Op%C3%A9ra%2C%2075002%20Paris!5e0!3m2!1sfr!2sfr!4v1622555067045!5m2!1sfr!2sfr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.480341115105!2d2.3309787511008544!3d48.86811897918673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e306bd23e2f%3A0xbb767676f8cc71b9!2s37%20Avenue%20de%20l&#39;Op%C3%A9ra%2C%2075002%20Paris!5e0!3m2!1sfr!2sfr!4v1622555067045!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
 
       <div class="boutiqueInfo b">

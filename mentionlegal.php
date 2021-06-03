@@ -13,7 +13,7 @@ include "header.php";
 
 <h5>Notre entreprise</h5>
 <p>Nom : SARL lupin Brentano's </p>
-<p>Adress : 37 Avenue de l'Opéra</p>
+<p>Adresse : 37 Avenue de l'Opéra</p>
 <p>Téléphone : 01 42 60 87 37</p>
 <p>Email : brentanos@orange.fr</p>
 <p>SIRET :  512 380 387 00021</p>

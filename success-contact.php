@@ -2,9 +2,15 @@
 
 include "header.php";
 
+require "src/functions.php";
+
+
 ?>
 
 <main>
+
+
+
 
   <h1 class="b">Votre message est envoyé !</h1>
 
@@ -12,28 +18,28 @@ include "header.php";
 
     <div class="postdData">
       <h5>Votre nom et prénom</h5>
-      <p><?= $_POST['nomprenom'] ?></p>
+      <p><?= h($_POST['nomprenom']) ?></p>
     </div>
 
     <div class="postdData">
       <h5>Votre email adress</h5>
-      <p><?= $_POST['email'] ?></p>
+      <p><?= h($_POST['email']) ?></p>
     </div>
 
     <div class="postdData">
       <h5>Le sujet de message</h5>
-      <p><?= $_POST['sujet'] ?></p>
+      <p><?= h($_POST['sujet']) ?></p>
     </div>
 
     <div class="postdData">
       <h5>Votre message</h5>
-      <p><?= $_POST['message'] ?></p>
+      <p><?= h($_POST['message']) ?></p>
     </div>
 
 
 
 
-<a class="b" href="index.php">Page d'accueil</a>
+<a class="back" href="index.php">Page d'accueil</a>
 
 
 
